@@ -1,0 +1,7 @@
+CREATE USER ‘mailservice’@‘%’ IDENTIFIED BY ‘P@ssw0rd’;
+
+GRANT ALL PRIVILEGES ON *.* TO 'mailservice'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+allowPublicKeyRetrieval=true&useSSL=false
